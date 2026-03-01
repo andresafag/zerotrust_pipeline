@@ -22,11 +22,9 @@ jobs:
           echo test, and deploy your project.
       
       - name: Official SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v5.0.0
+        uses: SonarSource/sonarqube-scan-action@v7.0.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          scannerBinariesUrl: https://binaries.sonarsource.com
 
       - name: Snyk
         uses: snyk/actions@0.4.0
