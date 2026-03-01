@@ -29,7 +29,7 @@ jobs:
       - name: Snyk
         uses: snyk/actions@0.4.0
         env:
-          SNYK_TOKEN: snyk_uat.1fcad39e.eyJlIjoxNzgwMTYzMTM5LCJoIjoic255ay5pbyIsImoiOiJBWnlxbDJ1WGlPeEMxd25PZTBpTjFnIiwicyI6Ik9XRkJwZ2hKUVAtTDRvMkRyN3I4MFEiLCJ0aWQiOiJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBIn0.Vt8e2fnkegnL7Tzt1ABgJE42oQK7rpuf0tggrX0_Qt8duiG9cuGQp9GeOW1pRTtEkjH6w8IWc8nv8uTa1YyZBw
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: test
  
