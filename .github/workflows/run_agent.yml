@@ -21,7 +21,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: HashiCorp Vault
-        uses: hashicorp/vault-action@v3.4.0
+        uses: hashicorp/vault-action@v4.0.0
         with:
           url: https://sample-cluster-public-vault-538e9aac.ccf3202b.z1.hashicorp.cloud:8200
           secrets: |
