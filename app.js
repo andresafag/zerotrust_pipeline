@@ -1,7 +1,7 @@
 const express = require('express');
 const mysql = require('mysql2/promise');
 const path = require('path');
-require('dotenv').config(); // Carga credenciales desde un archivo .env
+require('dotenv').config(); 
 
 const app = express();
 
@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Pool de conexiones (Mejor rendimiento y seguridad)
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'app_user',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
     waitForConnections: true,
