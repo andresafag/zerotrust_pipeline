@@ -25,8 +25,8 @@ jobs:
         with:
           url: https://vault-cluster-public-vault-1aa221c1.75635c04.z1.hashicorp.cloud:8200
           secrets: |
-            secret/data/myapp/config SONAR_TOKEN | SONAR_TOKEN ;
-            secret/data/myapp/config SNYK_TOKEN | SNYK_TOKEN ;
+            myapp/config SONAR_TOKEN | SONAR_TOKEN ;
+            myapp/config SNYK_TOKEN | SNYK_TOKEN ;
 
           namespace: admin
           role: my-role
