@@ -23,7 +23,7 @@ jobs:
       - name: HashiCorp Vault
         uses: hashicorp/vault-action@v3.4.0
         with:
-          url: https://sample-cluster-public-vault-538e9aac.ccf3202b.z1.hashicorp.cloud:8200
+          url: https://vault-cluster-public-vault-1aa221c1.75635c04.z1.hashicorp.cloud:8200
           secrets: |
             secret/data/myapp/config SONAR_TOKEN | SONAR_TOKEN ;
             secret/data/myapp/config SNYK_TOKEN | SNYK_TOKEN ;
