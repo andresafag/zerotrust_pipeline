@@ -53,6 +53,10 @@ The pipeline, built on **GitHub Actions**, follows a strict Zero-Trust flow:
     - VAULT_TOKEN
     - SNYK_TOKEN (if using Snyk in CI)
     - SONAR_TOKEN (for SonarCloud analysis)
+  
+  ![alt text](<Screenshot From 2026-02-28 21-40-03.png>)
+
+  ![alt text](<Screenshot From 2026-03-01 16-45-58.png>)
 
 2.  Run local checks (examples — adapt if scripts differ):
     ```bash
