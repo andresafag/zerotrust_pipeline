@@ -33,7 +33,7 @@ jobs:
           token: ${{ secrets.VAULT_TOKEN }}
 
       - name: Official SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v7.0.0
+        uses: SonarSource/sonarqube-scan-action@v8.2.0
         env:
           SONAR_TOKEN: ${{ env.SONAR_TOKEN }}
 
